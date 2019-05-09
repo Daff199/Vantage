@@ -94,6 +94,7 @@ a.trigger {
     width: 80vw;
     margin-left: 20px;
     transition: width 0.2s;
+    height: auto;
 }
 
 .grid-container {
@@ -109,10 +110,6 @@ a.trigger {
     text-align: center;
 }
 
-.grid-container .grid-item {
-    width: 200px;
-    height: 150px;
-}
 
 .grid-container .grid-item img{
     max-width: 200px;

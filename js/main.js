@@ -27,11 +27,7 @@ function loader(){
     }
 }
 
-
-/*$(".home").addEventListener("click", () => {
-    $("#content").innerHTML = routes["home"];    
-})*/
-$("#content").innerHTML = routes["home"];
+$("#content").innerHTML = routes["init"];
 
 document.querySelectorAll("#sidebar ul li a").forEach(element => {
     switch (element.textContent){
@@ -60,3 +56,26 @@ document.querySelectorAll(".grid-container a").forEach(element => {
     })
 });
 
+$(".home").addEventListener("click", () => {
+    location.reload();    
+});
+
+
+
+function loadJSON(path, success, error){
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function()
+    {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+            if (xhr.status === 200) {
+                if (success)
+                    success(JSON.parse(xhr.responseText));
+            } else {
+                if (error)
+                    error(xhr);
+            }
+        }
+    };
+    xhr.open("GET", path, true);
+    xhr.send();
+}

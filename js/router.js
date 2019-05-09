@@ -1,3 +1,4 @@
 routes = {
-    'home': home_template,
+    'init': init_template,
+    'about': ""
   };
