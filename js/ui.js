@@ -6,7 +6,7 @@ function toggleSidebar(){
     if ($("#sidebar").classList.contains("active-sidebar")){
         hideSidebar();
         $("header").style.width = "100vw";
-        $("#content").style.width = "100vw";
+        $("#content").style.width = "99vw";
         $("#content").style.left = "0";
     } else {
         showSidebar();

@@ -8,6 +8,8 @@ function loader(){
         cont.id = "content";
         cont.classList.add("grid-container");
         $("body").appendChild(cont);
+    } else {
+        $("#content").classList.add("grid-container");
     }
     clearContent();
     for (let i = 0; i<data.imgs.length; i++){
@@ -26,23 +28,35 @@ function loader(){
 }
 
 
+/*$(".home").addEventListener("click", () => {
+    $("#content").innerHTML = routes["home"];    
+})*/
+$("#content").innerHTML = routes["home"];
+
 document.querySelectorAll("#sidebar ul li a").forEach(element => {
     switch (element.textContent){
         case "Series":
-            element.addEventListener("click", function (){
+            element.addEventListener("click", () =>{
                 loader()
             });
             break;
         case "Peliculas":
-            element.addEventListener("click", function (){
+            element.addEventListener("click", () =>{
                 loader()
             })
             break;
 
         case "Categorias":
-            element.addEventListener("mouseover", function (){
+            element.addEventListener("mouseover", () =>{
                 console.log("aaaa");
             })
             break;
     }
 });
+
+document.querySelectorAll(".grid-container a").forEach(element => {
+    element.addEventListener("click", function (){
+
+    })
+});
+
