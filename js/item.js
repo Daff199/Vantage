@@ -1,4 +1,4 @@
-$("head title").innerHTML = findGetParameter("title");
+$("head title").innerHTML = findGetParameter("title")
 
 function createVideoComponent(link){
     let videoElement = document.createElement("video");
@@ -12,8 +12,11 @@ function createVideoComponent(link){
     $("body").appendChild(videoElement);
 }
 
-
 window.onload = () => {
-    
-    createVideoComponent(findGetParameter("src"))
+    createVideoComponent(findGetParameter("src"));
+    $(".back-btn").addEventListener("click", () => {
+        window.history.back();
+    })
+
 }
+
