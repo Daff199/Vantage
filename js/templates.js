@@ -1,4 +1,4 @@
-let init_template = `
+var init_template = `
     <div class="description">    
         <h3>Vantage</h3>
         <p>Final proyect of markup languages</p>

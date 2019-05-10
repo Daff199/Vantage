@@ -3,6 +3,7 @@ function clearContent() {
 }
 
 function loader(){
+    
     if ($("#content") == null){
         var cont = document.createElement("div");
         cont.id = "content";
@@ -12,19 +13,22 @@ function loader(){
         $("#content").classList.add("grid-container");
     }
     clearContent();
-    for (let i = 0; i<data.imgs.length; i++){
-        let gridElement = document.createElement("div");
-        gridElement.classList.add("grid-item");
-        let a = document.createElement("a");
-        a.href = "#";
-        let img = document.createElement("img");
-        //    img.src = data.root.concat(data.imgs[i]);
-        img.src = data.imgs[i];
-        a.appendChild(img);
-        gridElement.appendChild(a);
-
-        $(".grid-container").appendChild(gridElement);
-    }
+    loadJSON("assets/data.json", (data) => {
+        for (let i = 0; i<data.imgs.length; i++){
+            let gridElement = document.createElement("div");
+            gridElement.classList.add("grid-item");
+            let a = document.createElement("a");
+            a.href = "../item.html?title=".concat(data.imgs[i].split("/").pop().split(".")[0]).concat("&").concat("src=").concat(data.videos[i]);
+            a.id = data.imgs[i].split("/").pop().split(".")[0];
+            let img = document.createElement("img");
+            img.src = data.imgs[i];
+            a.appendChild(img);
+            gridElement.appendChild(a);
+    
+            $(".grid-container").appendChild(gridElement);
+        }
+    });
+    
 }
 
 $("#content").innerHTML = routes["init"];
@@ -61,21 +65,39 @@ $(".home").addEventListener("click", () => {
 });
 
 
+document.querySelectorAll(".grid-container .grid-item a").forEach(element => {
+    switch (element.id){
+        case "agents_of_shield":
+            element.addEventListener("click", () =>{
+                console.log("aaaa");
+            })
 
-function loadJSON(path, success, error){
-    var xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = function()
-    {
-        if (xhr.readyState === XMLHttpRequest.DONE) {
-            if (xhr.status === 200) {
-                if (success)
-                    success(JSON.parse(xhr.responseText));
-            } else {
-                if (error)
-                    error(xhr);
-            }
-        }
-    };
-    xhr.open("GET", path, true);
-    xhr.send();
-}
+            break;
+        case "the_grand_tour":
+            element.addEventListener("click", () =>{
+                console.log("aaaa");
+            })
+            break;
+
+        case "narcos":
+            element.addEventListener("click", () =>{
+                console.log("aaaa");
+            })
+            break;
+        case "arrow":
+            element.addEventListener("click", () =>{
+                console.log("aaaa");
+            })
+            break;
+        case "supergirl":
+            element.addEventListener("click", () =>{
+                console.log("aaaa");
+            })
+            break;
+        case "mr_robot":
+            element.addEventListener("click", () =>{
+                console.log("aaaa");
+            })
+            break;
+    }
+});

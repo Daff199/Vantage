@@ -1,0 +1,18 @@
+{
+    "imgs": [
+        "assets/media/img/preview/agents_of_shield.jpg",
+        "assets/media/img/preview/the_grand_tour.jpg",
+        "assets/media/img/preview/narcos.jpg",
+        "assets/media/img/preview/arrow.jpg",
+        "assets/media/img/preview/supergirl.jpg",
+        "assets/media/img/preview/mr_robot.jpg"
+    ],
+    "videos": [
+        "assets/media/video/agents_of_shield_trailer.mp4",
+        "assets/media/video/the_grand_tour_trailer.mp4",
+        "assets/media/video/narcos_trailer.mp4",
+        "assets/media/video/arrow_trailer.mp4",
+        "assets/media/video/supergirl_trailer.mp4",
+        "assets/media/video/mr_robot_trailer.mp4"
+    ]
+}

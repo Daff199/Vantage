@@ -1,7 +1,3 @@
-function $(selector) {
-    return document.querySelector(selector);
-}
-
 function toggleSidebar(){
     if ($("#sidebar").classList.contains("active-sidebar")){
         hideSidebar();
