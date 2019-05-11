@@ -1,0 +1,19 @@
+body {
+    background-color: #0d0d0d;
+}
+
+div {
+    margin: auto;
+}
+
+input, textarea {
+    width: 200px;
+}
+
+label, h2 {
+    color: white;
+}
+
+.center {
+    
+}

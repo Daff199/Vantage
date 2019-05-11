@@ -1,0 +1,63 @@
+<folder name="main">
+    <folder name="assets">
+        <folder name="audio"></folder>
+        <folder name="media">
+            <folder name="img">
+                <folder name="preview">
+                    <file>agents_of_shield.jpg</file>
+                    <file>arrow.jpg</file>
+                    <file>fate_of_the_furious.jpg</file>
+                    <file>focus.jpg</file>
+                    <file>mr_robot.jpg</file>
+                    <file>narcos.jpg</file>
+                    <file>red_sparrow.jpg</file>
+                    <file>supergirl.jpg</file>
+                    <file>the_grand_tour.jpg</file>
+                    <file>the_mechanic_resurrection.jpg</file>
+                    <file>the_wolf_of_wall_street.jpg</file>
+                    <file>transporter_3.jpg</file>
+                </folder>
+            </folder>
+            <folder name="video">
+                <file>agents_of_shield_trailer.mp4</file>
+                <file>arrow_trailer.mp4</file>
+                <file>fate_of_the_furious.mp4</file>
+                <file>focus.mp4</file>
+                <file>mr_robot_trailer.mp4</file>
+                <file>narcos_trailer.mp4</file>
+                <file>red_sparrow.mp4</file>
+                <file>supergirl_trailer.mp4</file>
+                <file>the_grand_tour_trailer.mp4</file>
+                <file>the_mechanic_resurrection.mp4</file>
+                <file>the_wolf_of_wall_street.mp4</file>
+                <file>transporter_3.mp4</file>
+            </folder>
+        </folder>
+        <folder name="xml">
+            <file>form-data.dtd</file>
+            <file>form-data.xml</file>
+            <file>form-data.xsl</file>
+            <file>structure.xml</file>
+        </folder>
+        <file>data.json</file>
+    </folder>
+    <folder name="js">
+        <file>audioComponent.js</file>
+        <file>item.js</file>
+        <file>main.js</file>
+        <file>router.js</file>
+        <file>slider.js</file>
+        <file>templates.js</file>
+        <file>ui.js</file>
+        <file>util.js</file>
+    </folder>
+    <folder name="style">
+        <file>about.css</file>
+        <file>home.css</file>
+        <file>item.css</file>
+        <file>main.css</file>
+    </folder>
+    <file>index.html</file>
+    <file>item.html</file>
+    <file>README.md</file>
+</folder>

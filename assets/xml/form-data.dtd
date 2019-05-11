@@ -1,0 +1,4 @@
+<!ELEMENT form-data (email, name, message)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT message (#PCDATA)>
