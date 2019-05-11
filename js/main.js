@@ -2,8 +2,7 @@ function clearContent() {
     $("#content").innerHTML = "";
 }
 
-function loader(){
-    
+function loader(resource){
     if ($("#content") == null){
         var cont = document.createElement("div");
         cont.id = "content";
@@ -14,19 +13,37 @@ function loader(){
     }
     clearContent();
     loadJSON("assets/data.json", (data) => {
-        for (let i = 0; i<data.imgs.length; i++){
-            let gridElement = document.createElement("div");
-            gridElement.classList.add("grid-item");
-            let a = document.createElement("a");
-            a.href = "../item.html?title=".concat(data.imgs[i].split("/").pop().split(".")[0]).concat("&").concat("src=").concat(data.videos[i]);
-            a.id = data.imgs[i].split("/").pop().split(".")[0];
-            let img = document.createElement("img");
-            img.src = data.imgs[i];
-            a.appendChild(img);
-            gridElement.appendChild(a);
-    
-            $(".grid-container").appendChild(gridElement);
+        if (resource === "imgs"){
+            console.log(data);
+            for (let i = 0; i < data.shows_imgs.length; i++) {
+                let gridElement = document.createElement("div");
+                gridElement.classList.add("grid-item");
+                let a = document.createElement("a");
+                a.href = "../item.html?title=".concat(data.shows_imgs[i].split("/").pop().split(".")[0]).concat("&").concat("src=").concat(data.shows_videos[i]);
+                a.id = data.shows_imgs[i].split("/").pop().split(".")[0];
+                let img = document.createElement("img");
+                img.src = data.shows_imgs[i];
+                a.appendChild(img);
+                gridElement.appendChild(a);
+
+                $(".grid-container").appendChild(gridElement);
+            }
+        } else if (resource === "videos") {
+            for (let i = 0; i < data.movies_imgs.length; i++) {
+                let gridElement = document.createElement("div");
+                gridElement.classList.add("grid-item");
+                let a = document.createElement("a");
+                a.href = "../item.html?title=".concat(data.movies_imgs[i].split("/").pop().split(".")[0]).concat("&").concat("src=").concat(data.movies_videos[i]);
+                a.id = data.movies_imgs[i].split("/").pop().split(".")[0];
+                let img = document.createElement("img");
+                img.src = data.movies_imgs[i];
+                a.appendChild(img);
+                gridElement.appendChild(a);
+
+                $(".grid-container").appendChild(gridElement);
+            }
         }
+        
     });
     
 }
@@ -37,12 +54,12 @@ document.querySelectorAll("#sidebar ul li a").forEach(element => {
     switch (element.textContent){
         case "Series":
             element.addEventListener("click", () =>{
-                loader()
+                loader("imgs")
             });
             break;
         case "Peliculas":
             element.addEventListener("click", () =>{
-                loader()
+                loader("videos")
             })
             break;
 
@@ -64,40 +81,3 @@ $(".home").addEventListener("click", () => {
     location.reload();    
 });
 
-
-document.querySelectorAll(".grid-container .grid-item a").forEach(element => {
-    switch (element.id){
-        case "agents_of_shield":
-            element.addEventListener("click", () =>{
-                console.log("aaaa");
-            })
-
-            break;
-        case "the_grand_tour":
-            element.addEventListener("click", () =>{
-                console.log("aaaa");
-            })
-            break;
-
-        case "narcos":
-            element.addEventListener("click", () =>{
-                console.log("aaaa");
-            })
-            break;
-        case "arrow":
-            element.addEventListener("click", () =>{
-                console.log("aaaa");
-            })
-            break;
-        case "supergirl":
-            element.addEventListener("click", () =>{
-                console.log("aaaa");
-            })
-            break;
-        case "mr_robot":
-            element.addEventListener("click", () =>{
-                console.log("aaaa");
-            })
-            break;
-    }
-});
