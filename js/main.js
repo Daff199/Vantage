@@ -81,3 +81,4 @@ $(".home").addEventListener("click", () => {
     location.reload();    
 });
 
+

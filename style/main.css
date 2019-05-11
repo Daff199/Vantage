@@ -119,3 +119,8 @@ a.trigger {
 .home, .about {
     cursor: pointer;
 }
+
+.about {
+    text-decoration: none;
+    color: white;
+}
