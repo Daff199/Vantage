@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<library>
+  <movies>
+    <movie>
+      <title></title>
+      <duration></duration>
+      <category></category>
+      <path></path>
+    </movie>
+  </movies>
+  
+  <tv-shows>
+    <tv-show>
+      <name>The Grand Tour</name>
+      <episodes>
+        <episode>
+          <title>1</title>
+          <duration></duration>
+          <category></category>
+          <path></path>
+        </episode>
+      </episodes>
+    </tv-show>
+  </tv-shows>
+
+</library>

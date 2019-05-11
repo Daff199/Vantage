@@ -1,0 +1,49 @@
+{
+    "shows_imgs": [
+        "assets/media/img/preview/agents_of_shield.jpg",
+        "assets/media/img/preview/the_grand_tour.jpg",
+        "assets/media/img/preview/narcos.jpg",
+        "assets/media/img/preview/arrow.jpg",
+        "assets/media/img/preview/supergirl.jpg",
+        "assets/media/img/preview/mr_robot.jpg"
+    ],
+    "shows_videos": [
+        "assets/media/video/agents_of_shield_trailer.mp4",
+        "assets/media/video/the_grand_tour_trailer.mp4",
+        "assets/media/video/narcos_trailer.mp4",
+        "assets/media/video/arrow_trailer.mp4",
+        "assets/media/video/supergirl_trailer.mp4",
+        "assets/media/video/mr_robot_trailer.mp4"
+    ],
+    "movies_imgs": [
+        "assets/media/img/preview/red_sparrow.jpg",
+        "assets/media/img/preview/fate_of_the_furious.jpg",
+        "assets/media/img/preview/focus.jpg",
+        "assets/media/img/preview/the_wolf_of_wall_street.jpg",
+        "assets/media/img/preview/transporter_3.jpg",
+        "assets/media/img/preview/the_mechanic_resurrection.jpg"
+        
+    ],
+    
+    "movies_videos": [
+        "assets/media/video/red_sparrow.mp4",
+        "assets/media/video/fate_of_the_furious.mp4",
+        "assets/media/video/focus.mp4",
+        "assets/media/video/the_wolf_of_wall_street.mp4",
+        "assets/media/video/transporter_3.mp4",
+        "assets/media/video/the_mechanic_resurrection.mp4"
+    ],
+
+    "audios": {
+        "n": 5,
+        "songs": [
+            "assets/audio/21Savage-Gun Smoke.mp3",
+            "assets/audio/HunchoJack-Modern Slavery.mp3",
+            "assets/audio/LilUziVert-NewPatek.mp3",
+            "assets/audio/PlayboiCarti-A$APRocky-NewChoppa.mp3",
+            "assets/audio/Travis Scott-CANTSAY.mp3"
+        ]
+    } 
+
+    
+}
