@@ -26,7 +26,7 @@ function loader(resource){
                 a.appendChild(img);
                 gridElement.appendChild(a);
 
-                $(".grid-container").appendChild(gridElement);
+                $('.grid-container').appendChild(gridElement);
             }
         } else if (resource === "videos") {
             for (let i = 0; i < data.movies_imgs.length; i++) {
