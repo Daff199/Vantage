@@ -19,7 +19,7 @@ function loader(resource){
                 let gridElement = document.createElement("div");
                 gridElement.classList.add("grid-item");
                 let a = document.createElement("a");
-                a.href = "item.html?title=".concat(data.shows_imgs[i].split("/").pop().split(".")[0]).concat("&").concat("src=").concat(data.shows_videos[i]);
+                a.href = "Vantage/item.html?title=".concat(data.shows_imgs[i].split("/").pop().split(".")[0]).concat("&").concat("src=").concat(data.shows_videos[i]);
                 a.id = data.shows_imgs[i].split("/").pop().split(".")[0];
                 let img = document.createElement("img");
                 img.src = data.shows_imgs[i];
@@ -33,7 +33,7 @@ function loader(resource){
                 let gridElement = document.createElement("div");
                 gridElement.classList.add("grid-item");
                 let a = document.createElement("a");
-                a.href = "item.html?title=".concat(data.movies_imgs[i].split("/").pop().split(".")[0]).concat("&").concat("src=").concat(data.movies_videos[i]);
+                a.href = "Vantage/item.html?title=".concat(data.movies_imgs[i].split("/").pop().split(".")[0]).concat("&").concat("src=").concat(data.movies_videos[i]);
                 a.id = data.movies_imgs[i].split("/").pop().split(".")[0];
                 let img = document.createElement("img");
                 img.src = data.movies_imgs[i];
