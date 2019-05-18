@@ -42,7 +42,42 @@
             "assets/audio/LilUziVert-NewPatek.mp3",
             "assets/audio/PlayboiCarti-A$APRocky-NewChoppa.mp3",
             "assets/audio/Travis Scott-CANTSAY.mp3"
-        ]
+        ],
+        "imgs": { 
+            "albums" : [
+                {
+                    "name": "I am > I was",
+                    "img": "assets/media/img/music_img/21_savage_iam-iwas.jpeg",
+                    "song": "assets/audio/21Savage-Gun Smoke.mp3"
+                },
+                {
+                    "name": 15,
+                    "img": "assets/media/img/music_img/bhad_bhabie_15.jpeg"
+                },
+                {
+                    "name": "New Patek",
+                    "img": "assets/media/img/music_img/lil_uzi_vert_new_patek.jpeg",
+                    "song": "assets/audio/LilUziVert-NewPatek.mp3"
+                },
+                {
+                    "name": "Culture II",
+                    "img": "assets/media/img/music_img/migos_culture2.jpeg",
+                    "song": "assets/audio/Migos-Narcos.mp3"
+                },
+                {
+                    "name": "Playboy Carti",
+                    "img": "assets/media/img/music_img/playboi_carti_new_choppa.jpeg",
+                    "song": "assets/audio/PlayboiCarti-A$APRocky-NewChoppa.mp3"
+                },
+                {
+                    "name": "Astroworld",
+                    "img": "assets/media/img/music_img/travis_scott_astroworld.jpeg",
+                    "song": "assets/audio/Travis Scott-CANTSAY.mp3"
+                }
+            
+                
+            ]
+        }
     } 
 
     

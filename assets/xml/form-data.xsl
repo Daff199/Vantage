@@ -15,15 +15,15 @@
       <form method="POST">
       <table>
       <tr>
-        <label for="name">Name</label>
+        <td><label for="name">Name</label></td>
         <td><input name="name" placeholder="{$name}"/></td>
       </tr>
       <tr>
-        <label for="name">Email</label>
+        <td><label for="name">Email</label></td>
         <td><input name="email" type="email" placeholder="{$email}"/></td>
       </tr>
       <tr>
-        <label for="name">Message</label>
+        <td><label for="name">Message</label></td>
         <td><textarea name="message" placeholder="{$message}"/></td>
       </tr>
       </table>

@@ -124,3 +124,11 @@ a.trigger {
     text-decoration: none;
     color: white;
 }
+
+
+audio {
+    visibility: visible; 
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}

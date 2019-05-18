@@ -42,43 +42,72 @@ function loader(resource){
 
                 $(".grid-container").appendChild(gridElement);
             }
+        } else if (resource === "music") {
+            for (let i = 0; i < data.audios.imgs.albums.length; i++) {
+                let gridElement = document.createElement("div");
+                
+                let title = document.createElement("h5");
+                title.innerHTML = data.audios.imgs.albums[i].name;
+
+                gridElement.appendChild(title);
+                gridElement.classList.add("grid-item");
+
+                let a = document.createElement("a");
+                // a.href="";
+                a.classList.add("album");
+                let img = document.createElement("img");
+                img.src = data.audios.imgs.albums[i].img;
+                a.appendChild(img);
+                gridElement.appendChild(a);
+                a.addEventListener("click", () => {
+                    console.log(data.audios.imgs.albums[i].song);
+                    $("audio").pause();
+
+                    $("audio source").parentNode.removeChild($("audio source"));
+                    var sourc = document.createElement("source");
+                    sourc.src = data.audios.imgs.albums[i].song
+                    $("audio").appendChild(sourc);
+                    $("audio").load();
+                    $("audio").play();
+                    
+                });
+                $(".grid-container").appendChild(gridElement);
+            }
         }
         
     });
     
 }
 
-$("#content").innerHTML = routes["init"];
+    $("#content").innerHTML = routes["init"];
+
+
 
 document.querySelectorAll("#sidebar ul li a").forEach(element => {
     switch (element.textContent){
         case "Series":
             element.addEventListener("click", () =>{
-                loader("imgs")
+                loader("imgs");
             });
             break;
         case "Peliculas":
             element.addEventListener("click", () =>{
-                loader("videos")
+                loader("videos");
             })
             break;
 
-        case "Categorias":
-            element.addEventListener("mouseover", () =>{
-                console.log("aaaa");
+        case "Musica":
+            element.addEventListener("click", () =>{
+                loader("music");
             })
             break;
     }
-});
-
-document.querySelectorAll(".grid-container a").forEach(element => {
-    element.addEventListener("click", function (){
-
-    })
 });
 
 $(".home").addEventListener("click", () => {
     location.reload();    
 });
 
-
+document.querySelectorAll(".album").forEach(element => {
+    console.log(element)
+});
