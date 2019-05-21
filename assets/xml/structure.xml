@@ -1,4 +1,5 @@
-<folder name="main">
+﻿<?xml-stylesheet type="text/xsl" href="/Users/danifernandezfernandez/Documents/git/Vantage/assets/xml/structure.xsl"?>
+<!DOCTYPE folder SYSTEM "structure.dtd"><folder name="main">
     <folder name="assets">
         <folder name="audio"></folder>
         <folder name="media">

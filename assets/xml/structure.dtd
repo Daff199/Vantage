@@ -1,0 +1,4 @@
+<!ELEMENT folder (folder*, file*)>
+<!ATTLIST folder
+          name CDATA #REQUIRED>
+<!ELEMENT file (#PCDATA)>
