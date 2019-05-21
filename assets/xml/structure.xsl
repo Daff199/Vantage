@@ -9,7 +9,6 @@
     <head>
     </head>
     <body>
-      <h2>Contact us!!</h2>
       <table>
       <h2>Audio</h2>
         <xsl:for-each select="//file[../@name='audio']">
